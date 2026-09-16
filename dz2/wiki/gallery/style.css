@@ -1,0 +1,73 @@
+/* Базовые стили для всей страницы */
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 40px;
+}
+
+/* Общая серая рамка вокруг всей галереи */
+.gallery-container {
+    background-color: #f9f9f9;
+    border: 2px solid #e0e0e0;
+    width: 500px;
+    margin: 0 auto; /* Выравнивание по центру экрана */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Стили заголовка */
+h1 {
+    font-size: 20px;
+    color: #333333;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+/* Контейнер для большого изображения с внутренней рамкой */
+.main-image-box {
+    border: 1px solid #dcdcdc;
+    background-color: #ffffff;
+    width: 440px;
+    height: 300px;
+    margin: 0 auto 25px auto; /* Центрирование и отступ снизу */
+    padding: 10px;
+}
+
+/* Стили для самого iframe */
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none; /* Убираем стандартную рамку iframe */
+    display: block;
+}
+
+/* Блок с миниатюрами */
+.thumbnails-list {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 20px;
+    text-align: center;
+}
+
+/* Стили для ссылок-миниатюр */
+.thumbnails-list a {
+    display: inline-block;
+    border: 1px solid #dcdcdc;
+    margin: 0 4px;
+    padding: 4px;
+    background-color: #ffffff;
+    vertical-align: middle;
+}
+
+/* Эффект при наведении на маленькую картинку */
+.thumbnails-list a:hover {
+    border-color: #999999;
+}
+
+/* Ограничение размеров картинок внутри миниатюр */
+.thumbnails-list img {
+    width: 50px;
+    height: 50px;
+    display: block;
+}

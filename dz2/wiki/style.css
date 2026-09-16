@@ -1,0 +1,64 @@
+/* Базовые настройки шрифта и страницы */
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+    color: #202122;
+    padding: 20px;
+    max-width: 800px;
+}
+
+/* Стили заголовков */
+h1 {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 13px;
+    color: #54595d;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: Georgia, serif;
+    font-size: 22px;
+    font-weight: normal;
+    border-bottom: 1px solid #a2a9b1;
+    padding-bottom: 3px;
+    margin-top: 30px;
+}
+
+h3 {
+    font-size: 17px;
+    margin-top: 20px;
+}
+
+/* Оформление рамки содержания (Contents) */
+.contents-box {
+    background-color: #f8f9fa;
+    border: 1px solid #a2a9b1;
+    padding: 10px 15px;
+    display: inline-block; /* Чтобы рамка не растягивалась на весь экран */
+    margin-bottom: 20px;
+}
+
+.contents-title {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* Ссылки (убираем подчеркивание по умолчанию) */
+a {
+    color: #0b0080;
+    text-decoration: none;
+}
+
+/* Требование задания: подчеркивание только при наведении мышкой */
+a:hover {
+    text-decoration: underline;
+}
