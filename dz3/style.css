@@ -1,0 +1,74 @@
+.container-one{
+    background-color: rgb(191, 229, 216);
+    width: 1000px;
+    margin: 50px auto;
+    padding: 50px 30px;
+}
+
+.container-one h2{
+    text-align: center;
+}
+
+.container-one q {
+    display: block;/*из строчного в строчно блочный*/
+    text-align: right;
+    margin: 10px;
+}
+
+.container-one .line{
+    height: 2px;
+    background-color: rgb(5, 5, 5);
+}
+
+.container-one .sp-two
+{
+    color: rgb(0, 0, 0,0.8);
+}
+
+.container-one .sp-three
+{
+    color: rgb(0, 0,0, 0.6);
+}
+
+.container-one .sp-four
+{
+    color: rgb(0, 0,0, 0.4);
+}
+
+.container-one .sp-five
+{
+    color: rgb(0, 0,0, 0.2);
+}
+
+.container-one .sp-six
+{
+    color: rgb(0, 0,0, 0.15);
+}
+
+.container-one .sp-seven
+{
+    color: rgb(0, 0,0, 0.10);
+}
+
+/* 2 */
+
+.container-two
+{
+        background-color: rgb(191, 229, 216);
+    width: 1000px;
+    margin: 50px auto;
+    padding: 50px 30px;
+}
+
+.container-two .formula
+{
+    background-color: cadetblue;
+    padding: 10px;
+    width: max-content;
+    margin: auto;
+}
+
+.container-two span{
+    color: cadetblue;
+    font-weight: bold;
+}
