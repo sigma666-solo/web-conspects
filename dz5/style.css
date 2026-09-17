@@ -1,0 +1,120 @@
+/* Базовые стили страницы */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #008b8b; /* Бирюзовый фон */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Запрещаем общий скролл страницы */
+}
+
+/* Фиксированная шапка */
+.main-header {
+    background-color: #007a7a;
+    padding: 15px 25px;
+    color: #ffffff;
+    flex-shrink: 0;
+}
+
+.main-header h1 {
+    margin: 0;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+/* Контейнер для досок */
+.boards-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+    flex-grow: 1;
+    overflow-x: auto; /* Появится горизонтальный скролл, если сжать окно браузера */
+    align-items: flex-start;
+}
+
+/* Стили доски */
+.board {
+    background-color: #e2e8f0;
+    border-radius: 8px;
+    width: 320px;              /* Стабильная ширина в пределах 300-400px */
+    min-width: 320px;
+    max-height: 100%;          /* Доска не станет выше экрана */
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+}
+
+/* Заголовок доски */
+.board-title {
+    margin: 0;
+    padding: 15px 20px 10px 20px;
+    font-size: 16px;
+    color: #333333;
+    font-weight: bold;
+}
+
+/* Скролл для карточек внутри доски */
+.board-cards {
+    padding: 0 15px;
+    overflow-y: auto; /* Появится вертикальный скролл, если уменьшить высоту браузера */
+    flex-grow: 1;
+}
+
+/* Карточка задачи */
+.card {
+    background-color: #ffffff;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.card:last-child {
+    margin-bottom: 5px;
+}
+
+.card-text {
+    margin: 0 0 15px 0;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #4a5568;
+}
+
+/* Нижняя панель карточки */
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Иконки метрик */
+.card-stats {
+    display: flex;
+    gap: 12px;
+    font-size: 12px;
+    color: #718096;
+    align-items: center;
+}
+
+.card-stats span {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.card-stats img {
+    height: 14px;
+    width: auto;
+}
+
+/* Аватар */
+.avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    object-fit: cover;
+}
