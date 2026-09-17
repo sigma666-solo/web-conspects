@@ -1,0 +1,44 @@
+/* Общие стили страницы для центрирования */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+/* 1. Светлый фон у всего списка + внешние/внутренние отступы */
+.fruit-list {
+    background-color: #f7b1c1; /* Светло-розовый фон всего списка */
+    padding: 30px 40px;        /* Внутренние поля списка */
+    margin: 0;
+    width: 450px;              /* Фиксированная ширина как на макете */
+}
+
+/* Стили для каждого элемента списка */
+.fruit-list li {
+    background-color: #d16b84; /* Стандартный фон для элементов списка */
+    color: #ffffff;            /* Белый цвет цифр и текста */
+    padding: 10px 15px;        /* Внутренние отступы строк */
+    margin-bottom: 12px;       /* Расстояние между строками */
+    font-size: 18px;
+}
+
+/* Удаляем нижний маргин у последнего элемента */
+.fruit-list li:last-child {
+    margin-bottom: 0;
+}
+
+/* 2. Более темный фон у ОДНОГО выбранного элемента списка (Orange) */
+.fruit-list li.active {
+    background-color: #b04c64; /* Фон темнее, чем у остальных */
+}
+
+/* 3. Самый темный фон только под самим текстом */
+.fruit-list li span {
+    background-color: #7d2a3e; /* Самый темный бордовый фон */
+    padding: 4px 15px;         /* Отступы вокруг текста, чтобы фон смотрелся красиво */
+    display: inline-block;     /* Позволяет правильно применять padding к тексту */
+    min-width: 100px;          /* Задаем минимальную ширину плашки под текст */
+}
