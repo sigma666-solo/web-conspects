@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Практическое задание 1 - Модуль 10</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="contact-form">
+        <h2>Contact form</h2>
+        <p>Please fill in your information and we'll be sending your order</p>
+
+        <form action="#" method="POST">
+            
+            <div class="form-row">
+                <div class="half-width">
+                    <label>First name</label>
+                    <input type="text" class="input-text" placeholder="E.g. John">
+                </div>
+                <div class="half-width-right">
+                    <label>Last name</label>
+                    <input type="text" class="input-text" placeholder="E.g. Doe">
+                </div>
+                <div class="clear"></div>
+            </div>
+
+            <div class="form-row">
+                <label>Your email</label>
+                <input type="email" class="input-text" placeholder="E.g. john@doe.com" required>
+            </div>
+
+            <div class="form-row">
+                <label>Phone *</label>
+                <input type="text" class="input-text" placeholder="E.g. +1 234 567 89 00" required>
+            </div>
+
+            <div class="form-row">
+                <label>Message subject *</label>
+                <select class="input-text" required>
+                    <option value="">Choose subject...</option>
+                    <option value="support">Technical Support</option>
+                    <option value="sales">Sales Department</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <label>Message *</label>
+                <textarea class="input-text" placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <div class="form-row">
+                <button type="submit" class="submit-btn">Submit Form</button>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
