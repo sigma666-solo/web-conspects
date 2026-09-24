@@ -1,0 +1,40 @@
+body {
+    background-color: #fdfad0;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 30px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.icon {
+    width: 100px;
+    opacity: 0;
+    transform: translateY(100%);
+    animation: slideUp 2s ease forwards;
+}
+
+.i1 { animation-delay: 0s; }
+.i2 { animation-delay: 0.5s; }
+.i3 { animation-delay: 1s; }
+.i4 { animation-delay: 1.5s; }
+.i5 { animation-delay: 2s; }
+
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
