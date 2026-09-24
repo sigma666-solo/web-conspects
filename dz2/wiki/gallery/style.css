@@ -1,73 +1,56 @@
-/* Базовые стили для всей страницы */
 body {
-    background-color: #f5f5f5;
-    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
-    padding: 40px;
-}
-
-/* Общая серая рамка вокруг всей галереи */
-.gallery-container {
     background-color: #f9f9f9;
-    border: 2px solid #e0e0e0;
-    width: 500px;
-    margin: 0 auto; /* Выравнивание по центру экрана */
-    padding: 20px;
-    text-align: center;
+    font-family: sans-serif;
 }
 
-/* Стили заголовка */
+.gallery {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    padding: 30px;
+    text-align: center;
+    width: 400px;
+}
+
 h1 {
-    font-size: 20px;
-    color: #333333;
-    margin-top: 10px;
-    margin-bottom: 25px;
+    font-size: 16px;
     letter-spacing: 1px;
+    margin-top: 0;
+    margin-bottom: 30px;
 }
 
-/* Контейнер для большого изображения с внутренней рамкой */
-.main-image-box {
-    border: 1px solid #dcdcdc;
-    background-color: #ffffff;
-    width: 440px;
-    height: 300px;
-    margin: 0 auto 25px auto; /* Центрирование и отступ снизу */
-    padding: 10px;
+.big-image-container {
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-/* Стили для самого iframe */
-iframe {
-    width: 100%;
-    height: 100%;
-    border: none; /* Убираем стандартную рамку iframe */
-    display: block;
+.big-image-container img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
-/* Блок с миниатюрами */
-.thumbnails-list {
+.thumbnails-container {
     border-top: 1px solid #e0e0e0;
-    padding-top: 20px;
-    text-align: center;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
 }
 
-/* Стили для ссылок-миниатюр */
-.thumbnails-list a {
-    display: inline-block;
-    border: 1px solid #dcdcdc;
-    margin: 0 4px;
-    padding: 4px;
-    background-color: #ffffff;
-    vertical-align: middle;
-}
-
-/* Эффект при наведении на маленькую картинку */
-.thumbnails-list a:hover {
-    border-color: #999999;
-}
-
-/* Ограничение размеров картинок внутри миниатюр */
-.thumbnails-list img {
+.thumbnails-container img {
     width: 50px;
     height: 50px;
-    display: block;
+    border: 1px solid #e0e0e0;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.thumbnails-container img:hover {
+    border-color: #999999;
 }
